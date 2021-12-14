@@ -10,7 +10,9 @@ pipeline {
             }
         }
         stage('test') {
-            sh 'npm run test'
+            steps {
+                sh 'npm run test'
+            }       
         }
     }
 }
